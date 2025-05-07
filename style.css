@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/*aca configuro como se veria en computadora*/
+.barras{display: none;}
+.desplegable{background: #493004;}
+ul{  display: flex;
+    flex-direction: row;
+}
+ul li{
+    padding: 10px;
+    list-style: none;
+}
+ul li a{  color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+}
+nav ul li:hover{background: orangered; }
+/*aca configuro como se veria rn tablet*/
+@media (max-width: 850px) {
+.barras{
+    background-color: #eaa613;
+    display: block;
+}
+.desplegable{
+    background: none;
+    transform: translate(-100%);
+    transition: 0.5s;
+    font-size: 2.5rem;
+    width: 50%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+a{
+    padding: 0;
+}
+ a{
+    font-size: 1.5rem;
+    padding: 20px 0px 20px 20px;
+    display: block;
+    text-align: left;
+}
+.boton_menu{
+    background-image: url(../img/icono\ menu.jpg);
+    background-color: #493004;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+}
+button{
+    margin: 5px;
+    border: none;
+    margin: 10px 10px 10px 10px;
+}
+/*con esta clase abro y cierro el menu con
+toggle*/
+    .abrir_menu{
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(2px);
+    transform: translate(0%);
+    width: 50%;
+    transition: 0.5s;
+}
+/*con esta clase cambio las barras por una x*/
+.colocar_x{
+    background-image: url(../img/icono\ x.jpg);
+    background-color: #493004;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+  }
+}
+/*aca configuro como se veria en celular*/  
+@media (max-width: 500px){
+    .desplegable{
+        width: 100%;
+        height: 100vh;
+        font-size: 1.6rem;}}
