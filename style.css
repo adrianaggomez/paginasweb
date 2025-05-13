@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-   background-image: url(../img/fondo.png);
+   background-image: url(/img/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@ a{
     text-align: left;
 }
 .boton_menu{
-    background-image: url(../img/icono\ menu.jpg);
+    background-image: url(/img/icono\ menu.jpg);
     background-color: #493004;
     background-repeat: no-repeat;
     height: 30px;
@@ -78,7 +78,7 @@ toggle*/
 }
 /*con esta clase cambio las barras por una x*/
 .colocar_x{
-    background-image: url(../img/icono\ x.jpg);
+    background-image: url(/img/icono\ x.jpg);
     background-color: #493004;
     background-repeat: no-repeat;
     height: 30px;
